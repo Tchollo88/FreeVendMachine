@@ -31,32 +31,41 @@ namespace FreeVendMachine
 
             if (key.Key == ConsoleKey.D1)
             {
-                Console.WriteLine("Thank you for your selection,");
+                Console.WriteLine("\n\nThank you for your selection,");
                 Console.WriteLine("*Pulls a " + item1 + " off shelf placement, and drops it to the despensory.*");
-                Console.WriteLine("Please enjoy your " + item1 + " .");
+                Console.WriteLine("Please enjoy your " + item1 + " and select again: \n");
+
+                Menu();
             }
             else if (key.Key == ConsoleKey.D2)
             {
-                Console.WriteLine("Thank you for your selection,");
+                Console.WriteLine("\n\nThank you for your selection,");
                 Console.WriteLine("*Pulls a " + item2 + " off shelf placement, and drops it to the despensory.*");
-                Console.WriteLine("Please enjoy your " + item2 + " .");
+                Console.WriteLine("Please enjoy your " + item2 + " . \n");
+
+                Menu();
             }
             else if (key.Key == ConsoleKey.D3)
             {
-                Console.WriteLine("Thank you for your selection,");
+                Console.WriteLine("\n\nThank you for your selection,");
                 Console.WriteLine("*Pulls a " + item3 + " off shelf placement, and drops it to the despensory.*");
-                Console.WriteLine("Please enjoy your " + item3 + " .");
+                Console.WriteLine("Please enjoy your " + item3 + " . \n");
+
+                Menu();
             }
             else if (key.Key == ConsoleKey.D4)
             {
-                Console.WriteLine("Thank you for your selection,");
+                Console.WriteLine("\n\nThank you for your selection,");
                 Console.WriteLine("*Pulls a " + item4 + " off shelf placement, and drops it to the despensory.*");
-                Console.WriteLine("Please enjoy your " + item4 + " .");
+                Console.WriteLine("Please enjoy your " + item4 + " . \n");
+
+                Menu();
             }
         }
 
         public static void Menu()
         {
+            //Console.Clear();
             MenuIntro();
             ConsoleKeyInfo key = Console.ReadKey();
             SelectEngine(key);
