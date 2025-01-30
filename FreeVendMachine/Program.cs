@@ -18,13 +18,14 @@ namespace FreeVendMachine
         public static void MenuIntro()
         {
             Console.WriteLine("Welcome to FreeAll, these are the currenly available products:");
-            Console.WriteLine("(1)Nutrition Bar  (2)Rations  (3)Bandages  (4)Canteen");
+            Console.WriteLine("(1)Nutrition Bar  (2)Rations  (3)Bandages  (4)Canteen\n" +
+                              "(5)Pain Killer  (6)Syringe  (7)Water  (8)Alcohol");
             Console.WriteLine("Please select your desired item.");
         }
 
         public static void SelectEngine(ConsoleKeyInfo key)
         {
-            string[] item = { "nutrition bar", "rations", "bangages", "canteen" };
+            string[] item = { "nutrition bar", "rations", "bangages", "canteen", "pain killer", "syringe", "water", "alcohol" };
 
             Console.Clear();
             Console.WriteLine("Thank you for your selection,");
@@ -54,6 +55,34 @@ namespace FreeVendMachine
             {
                 Console.WriteLine("*Pulls a " + item[3] + " off shelf placement, and drops it to the despensory.*");
                 Console.WriteLine("Please enjoy your " + item[3] + " and select again: \n");
+
+                Menu();
+            }
+            else if (key.Key == ConsoleKey.D5)
+            {
+                Console.WriteLine("*Pulls a " + item[4] + " off shelf placement, and drops it to the despensory.*");
+                Console.WriteLine("Please enjoy your " + item[4] + " and select again: \n");
+
+                Menu();
+            }
+            else if (key.Key == ConsoleKey.D6)
+            {
+                Console.WriteLine("*Pulls a " + item[5] + " off shelf placement, and drops it to the despensory.*");
+                Console.WriteLine("Please enjoy your " + item[5] + " and select again: \n");
+
+                Menu();
+            }
+            else if (key.Key == ConsoleKey.D7)
+            {
+                Console.WriteLine("*Pulls a " + item[6] + " off shelf placement, and drops it to the despensory.*");
+                Console.WriteLine("Please enjoy your " + item[6] + " and select again: \n");
+
+                Menu();
+            }
+            else if (key.Key == ConsoleKey.D8)
+            {
+                Console.WriteLine("*Pulls a " + item[7] + " off shelf placement, and drops it to the despensory.*");
+                Console.WriteLine("Please enjoy your " + item[7] + " and select again: \n");
 
                 Menu();
             }
